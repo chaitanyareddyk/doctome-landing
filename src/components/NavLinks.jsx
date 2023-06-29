@@ -8,8 +8,8 @@ export function NavLinks() {
   return [
     ['Terms of Service', '/terms-of-service'],
     ['Support', '/support'],
-    ['Privacy', '/privacy'],
-    ['Refunds', '/refunds'],
+    ['Privacy', '/privacy-policy'],
+    ['Refunds', '/terms-of-service'],
   ].map(([label, href], index) => (
     <Link
       key={label}

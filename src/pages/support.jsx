@@ -5,11 +5,11 @@ import { AuthLayout } from '@/components/AuthLayout'
 import { Button } from '@/components/Button'
 import { TextField } from '@/components/Fields'
 
-export default function Contact() {
+export default function Support() {
   return (
     <>
       <Head>
-        <title>Doctome - Contact Us</title>
+        <title>Doctome - Support</title>
       </Head>
       <div className="mx-36 my-12 flex flex-col">
         <div className="bg-white py-24 sm:py-32">
