@@ -260,7 +260,7 @@ function AppDemo() {
         <div className="p-4">
           <div className="flex gap-2">
             <div className="text-xs leading-6 text-gray-500">
-              Tailwind Labs, Inc.
+              Doctome
             </div>
             <div className="text-sm text-gray-900">$CSS</div>
             <svg viewBox="0 0 24 24" className="ml-auto h-6 w-6" fill="none">
@@ -341,19 +341,20 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-              Dcotor at your doorstep.
+              Doctor at your doorstep.
             </h1>
             <p className="mt-6 text-lg text-gray-600">
               We are a health tech company, providing at-home doctor
               consultations with complete home medical management for users,
               while enabling doctors to reach more patients.
             </p>
+            <div>Coming Soon...</div>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <AppStoreLink />
-              <Button href="#" variant="outline">
+              {/* <Button href="#" variant="outline">
                 <PlayIcon className="h-6 w-6 flex-none" />
                 <span className="ml-2.5">Watch the video</span>
-              </Button>
+              </Button> */}
             </div>
           </div>
           <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">

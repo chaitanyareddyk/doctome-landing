@@ -6,6 +6,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
+import Image from 'next/image'
 
 function MenuIcon(props) {
   return (
@@ -53,7 +54,15 @@ export function Header() {
           <div className="relative z-10 flex items-center gap-16">
             <Link href="/" aria-label="Home">
               {/* <Logo className="h-10 w-auto" /> */}
-              DOCTOME
+              {/* DOCTOME */}
+              <Image
+      src="/doctome-logo.png"
+      width={120}
+      height={120}
+      alt="Picture of the author"
+    />
+              
+
             </Link>
             <div className="hidden lg:flex lg:gap-10">
               {/* <NavLinks /> */}
