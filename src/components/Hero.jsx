@@ -344,11 +344,11 @@ export function Hero() {
               Doctor at your doorstep.
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-              We are a health tech company, providing at-home doctor
+              A mobile app, providing at-home doctor
               consultations with complete home medical management for users,
               while enabling doctors to reach more patients.
             </p>
-            <div>Coming Soon...</div>
+            <div className="font-semibold text-lg my-8">Coming Soon...</div>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <AppStoreLink />
               {/* <Button href="#" variant="outline">
