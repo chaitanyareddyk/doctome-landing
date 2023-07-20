@@ -2,6 +2,7 @@ import { useId, useRef, useState } from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'
 import { motion, useInView, useMotionValue } from 'framer-motion'
+import Link from 'next/link'
 
 import { AppScreen } from '@/components/AppScreen'
 import { AppStoreLink } from '@/components/AppStoreLink'
@@ -339,7 +340,7 @@ export function Hero() {
               Doctor at your doorstep.
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-              A mobile app, providing at-home doctor consultations with complete
+              Providing affordable at-home doctor consultations with complete
               home medical management for users, while enabling doctors to reach
               more patients.
             </p>
@@ -378,11 +379,18 @@ export function Hero() {
               className="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start"
             >
               {[
-                ['T-Hub', logoTHub, 'h-20 w-20'],
-                ['Makers of Milkshake', logoMom, 'h-20 w-20'],
-              ].map(([name, logo, className]) => (
+                ['T-Hub', logoTHub, 'h-20 w-20', 'https://t-hub.co'],
+                [
+                  'Makers of Milkshake',
+                  logoMom,
+                  'h-20 w-20',
+                  'https://www.makersofmilkshakes.com/',
+                ],
+              ].map(([name, logo, className, hLink]) => (
                 <li key={name} className={clsx('flex', className)}>
-                  <Image src={logo} alt={name} unoptimized />
+                  <a target="_blank" href={hLink} rel="noopener noreferrer">
+                    <Image src={logo} alt={name} unoptimized />
+                  </a>
                 </li>
               ))}
             </ul>

@@ -13,7 +13,7 @@ export function PlayStoreLink({ color = 'black' }) {
       <Image
         style={{ width: 145 }}
         src={playStoreBadge}
-        alt={'Play Store Badge'}
+        alt={'Play Store Download Button'}
         unoptimized
       />
     </Link>
