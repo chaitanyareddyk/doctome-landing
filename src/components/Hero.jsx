@@ -12,6 +12,7 @@ import logoTHub from '@/images/logos/t-hub.png'
 import logoMom from '@/images/logos/mom.png'
 
 import frame from '@/images/home-screen-shot.png'
+import { PlayStoreLink } from './PlayStoreLink'
 
 function BackgroundIllustration(props) {
   let id = useId()
@@ -255,9 +256,7 @@ function AppDemo() {
       <AppScreen.Body>
         <div className="p-4">
           <div className="flex gap-2">
-            <div className="text-xs leading-6 text-gray-500">
-              Doctome
-            </div>
+            <div className="text-xs leading-6 text-gray-500">Doctome</div>
             <div className="text-sm text-gray-900">$CSS</div>
             <svg viewBox="0 0 24 24" className="ml-auto h-6 w-6" fill="none">
               <path
@@ -340,17 +339,20 @@ export function Hero() {
               Doctor at your doorstep.
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-              A mobile app, providing at-home doctor
-              consultations with complete home medical management for users,
-              while enabling doctors to reach more patients.
+              A mobile app, providing at-home doctor consultations with complete
+              home medical management for users, while enabling doctors to reach
+              more patients.
             </p>
-            <div className="font-semibold text-lg my-8">Coming Soon...</div>
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
+            <div className="my-8 text-lg font-semibold">
+              Public Launch Soon...
+            </div>
+            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
               <AppStoreLink />
-              <Button href="#" variant="outline">
+              <PlayStoreLink />
+              {/* <Button href="#" variant="outline">
                 <PlayIcon className="h-6 w-6 flex-none" />
                 <span className="ml-2.5">Watch the video</span>
-              </Button>
+              </Button> */}
             </div>
           </div>
           <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
@@ -359,11 +361,11 @@ export function Hero() {
               <PhoneFrame className="mx-auto max-w-[366px]" priority>
                 {/* <AppDemo /> */}
                 <Image
-        src={frame}
-        alt=""
-        className="pointer-events-none absolute inset-0 h-full w-full"
-        unoptimized
-      />
+                  src={frame}
+                  alt=""
+                  className="pointer-events-none absolute inset-0 h-full w-full"
+                  unoptimized
+                />
               </PhoneFrame>
             </div>
           </div>
@@ -376,12 +378,11 @@ export function Hero() {
               className="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start"
             >
               {[
-                ['T-Hub', logoTHub, "h-20 w-20"],
-                ['Makers of Milkshake', logoMom, "h-20 w-20"],
-               
+                ['T-Hub', logoTHub, 'h-20 w-20'],
+                ['Makers of Milkshake', logoMom, 'h-20 w-20'],
               ].map(([name, logo, className]) => (
                 <li key={name} className={clsx('flex', className)}>
-                  <Image src={logo} alt={name}  unoptimized />
+                  <Image src={logo} alt={name} unoptimized />
                 </li>
               ))}
             </ul>

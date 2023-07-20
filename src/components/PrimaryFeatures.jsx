@@ -18,31 +18,35 @@ import {
   TransistorLogo,
   TupleLogo,
 } from '@/components/StockLogos'
+import consultationBookingScreen from '@/images/consultation-booking-screen.png'
+import labTestsScreen from '@/images/lab-tests-screen.png'
+import specialistBookingScreen from '@/images/specialist-consultation-screen.png'
+import Image from 'next/image'
 
 const MotionAppScreenHeader = motion(AppScreen.Header)
 const MotionAppScreenBody = motion(AppScreen.Body)
 
 const features = [
   {
-    name: 'Invite friends for better returns',
+    name: 'Book a home doctor consultation',
     description:
-      'For every friend you invite to Pocket, you get insider notifications 5 seconds sooner. And it’s 10 seconds if you invite an insider.',
+      'Convenient home doctor visits. Qualified professionals at your doorstep. Personalized care, without the wait.',
     icon: DeviceUserIcon,
-    screen: InviteScreen,
+    screen: consultationBookingScreen,
   },
   {
-    name: 'Notifications on stock dips',
+    name: 'Order Lab Tests',
     description:
-      'Get a push notification every time we find out something that’s going to lower the share price on your holdings so you can sell before the information hits the public markets.',
+      'Skip the lab visits. Order tests from home. Accurate results delivered digitally. Seamless and precise.',
     icon: DeviceNotificationIcon,
-    screen: StocksScreen,
+    screen: labTestsScreen,
   },
   {
-    name: 'Invest what you want',
+    name: 'Book a specialist consultation',
     description:
-      'We hide your stock purchases behind thousands of anonymous trading accounts, so suspicious activity can never be traced back to you.',
+      'Expert advice, hassle-free. Book specialist consultations with ease. Right guidance, anytime you need.',
     icon: DeviceTouchIcon,
-    screen: InvestScreen,
+    screen: specialistBookingScreen,
   },
 ]
 
@@ -420,27 +424,12 @@ function FeaturesDesktop() {
           <CircleBackground color="#13B5C8" className="animate-spin-slower" />
         </div>
         <PhoneFrame className="z-10 mx-auto w-full max-w-[366px]">
-          <Tab.Panels as={Fragment}>
-            <AnimatePresence
-              initial={false}
-              custom={{ isForwards, changeCount }}
-            >
-              {features.map((feature, featureIndex) =>
-                selectedIndex === featureIndex ? (
-                  <Tab.Panel
-                    static
-                    key={feature.name + changeCount}
-                    className="col-start-1 row-start-1 flex focus:outline-offset-[32px] [&:not(:focus-visible)]:focus:outline-none"
-                  >
-                    <feature.screen
-                      animated
-                      custom={{ isForwards, changeCount }}
-                    />
-                  </Tab.Panel>
-                ) : null
-              )}
-            </AnimatePresence>
-          </Tab.Panels>
+          <Image
+            src={features[selectedIndex].screen}
+            alt=""
+            className="pointer-events-none absolute inset-0 h-full w-full"
+            unoptimized
+          />
         </PhoneFrame>
       </div>
     </Tab.Group>
@@ -549,19 +538,14 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-            Every feature you need to win. Try it for yourself.
+            Everything healthcare, at your fingertips.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-            Pocket was built for investors like you who play by their own rules
-            and aren’t going to let SEC regulations get in the way of their
-            dreams. If other investing tools are afraid to build it, Pocket has
-            it.
+            Biryani comes to your doorstep, why not healthcare too?
           </p>
         </div>
       </Container>
-      <div className="mt-16 md:hidden">
-        <FeaturesMobile />
-      </div>
+      <div className="mt-16 md:hidden">{/* <FeaturesMobile /> */}</div>
       <Container className="hidden md:mt-20 md:block">
         <FeaturesDesktop />
       </Container>
