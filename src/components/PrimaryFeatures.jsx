@@ -538,8 +538,8 @@ export function PrimaryFeatures() {
     <section
       id="features"
       aria-label="Features for investing all your money"
-      style={{ backgroundColor: '#2E125D' }}
-      className=" py-20 sm:py-32"
+      // style={{ backgroundColor: '#2E125D' }}
+      className="bg-violet-950 py-20 sm:py-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
