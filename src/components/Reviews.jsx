@@ -52,7 +52,7 @@ const reviews = [
     title: 'Outstanding Medical Services',
     body: "I'm extremely impressed with the 'Doctome' app's services. It's super easy to book a doctor to visit our home, and the doctors are experienced and highly professional. The option to order medicines and lab tests through the app is a great advantage. I recently had a fever, and they promptly assigned a caring nurse to take care of me at home. I'm deeply grateful for their timely and efficient medical management. Big thumbs up to the 'Doctome' team!",
     author: 'Priyanka',
-    rating: 5,
+    rating: 4,
   },
   {
     title: 'Revolutionizing Healthcare',
@@ -70,7 +70,7 @@ const reviews = [
     title: 'A Must-Have App for Every Home',
     body: "As a busy professional, 'Doctome' has been a game-changer for me. No more waiting in long queues at clinics! I can easily book a doctor at my preferred time, and they promptly show up at my doorstep. It's absolutely amazing! The option to order medicines and lab tests is an added bonus. I haven't seen any other app offering such comprehensive medical services at such an affordable price. 'Doctome' is undoubtedly a must-have app for every household in Hyderabad.",
     author: 'Potha Reddy',
-    rating: 5,
+    rating: 4,
   },
   {
     title: 'Excellent Healthcare App',
@@ -106,7 +106,7 @@ const reviews = [
     title: 'Highly Efficient and Reliable',
     body: 'Doctome has been highly efficient and reliable for me and my family. The ease of booking at-home doctor consultations, ordering medicines, and lab tests from a single app is simply amazing. The option to have a nurse provide home care during illnesses is a true blessing. The flat rate of 500 INR for consultations is incredibly affordable. I would definitely recommend it to everyone!',
     author: 'Anjali Rathod',
-    rating: 5,
+    rating: 4,
   },
   {
     title: 'Top-notch Medical Services',

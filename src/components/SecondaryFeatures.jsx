@@ -66,7 +66,7 @@ const features = [
   {
     name: 'Order Medicines',
     description:
-      'Track your medicine orders effortlessly. View past orders, reorder medications, and stay organized with your medication history.',
+      'Track your medicine orders effortlessly. View past orders, reorder medications, and stay organized with your medication history. We deliver round the clock.',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
