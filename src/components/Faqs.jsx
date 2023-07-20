@@ -5,56 +5,74 @@ import { Container } from '@/components/Container'
 const faqs = [
   [
     {
-      question: 'How do I know the tips are good?',
+      question: 'How does Doctome work for booking doctor consultations?',
       answer:
-        'Our whole business depends on our tips being good, so it’s in our best interest that they are. The results of our customers speak for themselves, just trust us.',
+        'Doctome allows you to book doctor consultations easily through the app. Simply select your preferred specialty, choose the doctor, and schedule the appointment at your convenient time. The doctor will visit your home for the consultation.',
     },
     {
-      question: 'Isn’t this insider trading?',
+      question: 'Can I order medicines and lab tests through the Doctome app?',
       answer:
-        'Yes exactly. But at scale! Historically you could only make insider trades with knowledge from your direct network. Pocket brings you insider trading tips from people you don’t even know.',
+        'Absolutely! Doctome offers the convenience of ordering medicines and lab tests from the comfort of your home. Our trusted pharmacy partners deliver medicines, and we ensure accurate and timely lab test results.',
     },
     {
-      question: 'But isn’t insider trading illegal?',
+      question: 'What is the process for availing home healthcare services with Doctome?',
       answer:
-        'Here’s the thing: you’re the one doing the insider trading, not us. We’re just giving you the tips and some tools to make trades. We’re not doing anything wrong here.',
+        'For home healthcare services like nurse assistance during illnesses, fever, or post-surgery care, you can request the service through the app. Our experienced nurses will be assigned to provide personalized care at your home.',
     },
   ],
   [
     {
-      question: 'Do the people giving you tips realize what they are doing?',
+      question: 'What are the consultation charges for doctors on Doctome?',
       answer:
-        'Again I would argue this isn’t really our responsibility. People make their own choices. If they don’t research the consequences that’s on them, not on us.',
+        'We offer all doctor consultations at a flat rate of 500 INR, ensuring transparency and affordability for all our users.',
     },
     {
-      question: 'Where is Pocket based?',
+      question: 'Is Doctome available only in Hyderabad?',
       answer:
-        'Let’s just say it’s not somewhere where the SEC is going to find us.',
+        'Currently, Doctome services are available exclusively in Hyderabad. However, we plan to expand to other cities soon. Stay tuned for updates!',
     },
     {
-      question: 'Is there any age limit to trading on Pocket?',
+      question: 'How do I pay for consultations and services on Doctome?',
       answer:
-        'For our free plan, the age limit is based on the minimum age to trade in your country of residence. Our VIP plan uses advanced transaction anonymization though, so you can use that plan even if you’re 9 years old. Or a dog.',
+        'We provide secure and hassle-free payment options. You can pay for consultations, medicines, and services through various online payment methods, including credit/debit cards and digital wallets.',
     },
   ],
   [
     {
-      question: 'How did you get this on the App Store?',
+      question: 'Are the doctors on Doctome qualified and experienced?',
       answer:
-        'Honestly we were surprised too, but eventually we found out that the app reviewer found the app so compelling they approved it just so they could use it themselves.',
+        'Yes, we onboard only qualified and experienced doctors who meet our stringent criteria. Our doctors are registered practitioners with proven expertise in their respective fields.',
     },
     {
-      question: 'How do I explain the money I withdraw from Pocket to the IRS?',
+      question: 'Can I reschedule or cancel my appointment with Doctome?',
       answer:
-        'This feels like one-hundred percent a you problem. Pocket is not responsible in any way for your tax returns.',
+        'Of course! You can easily reschedule or cancel your appointment through the app. Please note that cancellations may be subject to certain terms and conditions.',
     },
     {
-      question: 'How do I become an insider?',
+      question: 'Is my personal and medical information secure on Doctome?',
       answer:
-        'Contact us with some details about your industry and the type of access you have to apply for an insider account. Once approved, we’ll send you a guide on collecting insider information without being detected at work.',
+        'Yes, your privacy is of utmost importance to us. We employ industry-standard security measures to safeguard your personal and medical information.',
     },
   ],
-]
+  [
+    {
+      question: 'How do I contact Doctome\'s customer support for any assistance?',
+      answer:
+        'For any queries or assistance, you can reach out to our customer support team through the app or website. We are available round the clock to address your concerns promptly.',
+    },
+    {
+      question: 'Can I use Doctome for emergency medical situations?',
+      answer:
+        'While Doctome is a great platform for healthcare services, it is not intended for emergency situations. In case of emergencies, please call your local emergency number or visit the nearest hospital immediately.',
+    },
+    {
+      question: 'What are the benefits of using Doctome for home healthcare?',
+      answer:
+        'Doctome offers the convenience of availing healthcare services at the comfort of your home. You can receive personalized care from experienced nurses during illnesses, which can lead to faster recovery and better overall well-being.',
+    },
+  ],
+];
+
 
 export function Faqs() {
   return (
