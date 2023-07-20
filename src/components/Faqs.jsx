@@ -15,9 +15,9 @@ const faqs = [
         'Absolutely! Doctome offers the convenience of ordering medicines and lab tests from the comfort of your home. Our trusted pharmacy partners deliver medicines, and we ensure accurate and timely lab test results.',
     },
     {
-      question: 'What is the process for availing home healthcare services with Doctome?',
+      question: 'Are the doctors on Doctome qualified and experienced?',
       answer:
-        'For home healthcare services like nurse assistance during illnesses, fever, or post-surgery care, you can request the service through the app. Our experienced nurses will be assigned to provide personalized care at your home.',
+        'Yes, we onboard only qualified and experienced doctors who meet our stringent criteria. Our doctors are registered practitioners with proven expertise in their respective fields.',
     },
   ],
   [
@@ -34,29 +34,14 @@ const faqs = [
     {
       question: 'How do I pay for consultations and services on Doctome?',
       answer:
-        'We provide secure and hassle-free payment options. You can pay for consultations, medicines, and services through various online payment methods, including credit/debit cards and digital wallets.',
+        'We provide secure and hassle-free payment options. You can pay for consultations, medicines, and services through various online payment methods, including UPI, credit/debit cards and digital wallets.',
     },
   ],
+
   [
     {
-      question: 'Are the doctors on Doctome qualified and experienced?',
-      answer:
-        'Yes, we onboard only qualified and experienced doctors who meet our stringent criteria. Our doctors are registered practitioners with proven expertise in their respective fields.',
-    },
-    {
-      question: 'Can I reschedule or cancel my appointment with Doctome?',
-      answer:
-        'Of course! You can easily reschedule or cancel your appointment through the app. Please note that cancellations may be subject to certain terms and conditions.',
-    },
-    {
-      question: 'Is my personal and medical information secure on Doctome?',
-      answer:
-        'Yes, your privacy is of utmost importance to us. We employ industry-standard security measures to safeguard your personal and medical information.',
-    },
-  ],
-  [
-    {
-      question: 'How do I contact Doctome\'s customer support for any assistance?',
+      question:
+        "How do I contact Doctome's customer support for any assistance?",
       answer:
         'For any queries or assistance, you can reach out to our customer support team through the app or website. We are available round the clock to address your concerns promptly.',
     },
@@ -66,13 +51,12 @@ const faqs = [
         'While Doctome is a great platform for healthcare services, it is not intended for emergency situations. In case of emergencies, please call your local emergency number or visit the nearest hospital immediately.',
     },
     {
-      question: 'What are the benefits of using Doctome for home healthcare?',
+      question: 'Is my personal and medical information secure on Doctome?',
       answer:
-        'Doctome offers the convenience of availing healthcare services at the comfort of your home. You can receive personalized care from experienced nurses during illnesses, which can lead to faster recovery and better overall well-being.',
+        'Yes, your privacy is of utmost importance to us. We employ industry-standard security measures to safeguard your personal and medical information.',
     },
   ],
-];
-
+]
 
 export function Faqs() {
   return (
@@ -92,7 +76,7 @@ export function Faqs() {
           <p className="mt-2 text-lg text-gray-600">
             If you have anything else you want to ask,{' '}
             <Link
-              href="mailto:info@example.com"
+              href="mailto:support@doctome.in"
               className="text-gray-900 underline"
             >
               reach out to us

@@ -30,7 +30,7 @@ const features = [
   {
     name: 'Book a home doctor consultation',
     description:
-      'Convenient home doctor visits. Qualified professionals at your doorstep. Personalized care, without the wait.',
+      'Say goodbye to waiting rooms! Convenient home doctor visits. Qualified professionals at your doorstep. Personalized care, without the wait.',
     icon: DeviceUserIcon,
     screen: consultationBookingScreen,
   },
@@ -488,7 +488,12 @@ function FeaturesMobile() {
                 />
               </div>
               <PhoneFrame className="relative mx-auto w-full max-w-[366px]">
-                <feature.screen />
+                <Image
+                  src={feature.screen}
+                  alt=""
+                  className="pointer-events-none absolute inset-0 h-full w-full"
+                  unoptimized
+                />
               </PhoneFrame>
               <div className="absolute inset-x-0 bottom-0 bg-gray-800/95 p-6 backdrop-blur sm:p-10">
                 <feature.icon className="h-8 w-8" />
@@ -545,7 +550,9 @@ export function PrimaryFeatures() {
           </p>
         </div>
       </Container>
-      <div className="mt-16 md:hidden">{/* <FeaturesMobile /> */}</div>
+      <div className="mt-16 md:hidden">
+        <FeaturesMobile />
+      </div>
       <Container className="hidden md:mt-20 md:block">
         <FeaturesDesktop />
       </Container>

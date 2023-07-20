@@ -27,9 +27,14 @@ export function Footer() {
         <div className="flex flex-col items-start justify-between gap-y-12 pb-6 pt-16 lg:flex-row lg:items-center lg:py-16">
           <div>
             <div className="flex items-center text-gray-900">
-              <Logomark className="h-10 w-10 flex-none fill-cyan-500" />
+              {/* <Logomark className="h-10 w-10 flex-none fill-cyan-500" /> */}
               <div className="ml-4">
-                <p className="text-base font-semibold">DOCTOME</p>
+                <Image
+                  src="/doctome-logo-2.png"
+                  width={160}
+                  height={160}
+                  alt="Doctome Logo"
+                />
                 <p className="mt-1 text-sm">Doctor, at your doorstep.</p>
               </div>
             </div>
