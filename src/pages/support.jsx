@@ -50,7 +50,7 @@ export default function Support() {
                   </div>
                   <div className="rounded-2xl bg-gray-50 p-10">
                     <h3 className="text-base font-semibold leading-7 text-gray-900">
-                      Press
+                      User Account Deletion
                     </h3>
                     <dl className="mt-3 space-y-1 text-sm leading-6 text-gray-600">
                       <div>
@@ -58,16 +58,16 @@ export default function Support() {
                         <dd>
                           <a
                             className="font-semibold text-indigo-600"
-                            href="mailto:press@doctome.in"
+                            href="mailto:deletemydata@doctome.in"
                           >
-                            press@doctome.in
+                            deletemydata@doctome.in
                           </a>
                         </dd>
                       </div>
-                      {/* <div className="mt-1">
-                        <dt className="sr-only">Phone number</dt>
-                        <dd>+1 (555) 905-3456</dd>
-                      </div> */}
+                      <address className="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
+                        <p>Write us an email with below subject:</p>
+                        <p>Delete my account - [Phone Number]</p>
+                      </address>
                     </dl>
                   </div>
                   <div className="rounded-2xl bg-gray-50 p-10">
