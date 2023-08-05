@@ -6,9 +6,10 @@ import appStoreBadge from '@/images/apple-appstore-badge.svg'
 export function AppStoreLink({ color = 'black' }) {
   return (
     <Link
-      href="#"
+      href="https://apps.apple.com/in/app/doctome-doctor-at-doorstep/id6456892185"
       aria-label="Download on the App Store"
       className={clsx('rounded-lg transition-colors')}
+      target="_blank"
     >
       {/* <svg viewBox="0 0 120 40" aria-hidden="true" className="h-10">
         <path

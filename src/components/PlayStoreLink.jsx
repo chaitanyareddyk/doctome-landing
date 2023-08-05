@@ -6,9 +6,10 @@ import playStoreBadge from '@/images/google-play-badge.png'
 export function PlayStoreLink({ color = 'black' }) {
   return (
     <Link
-      href="#"
+      href="https://play.google.com/store/apps/details?id=com.doctome.doctomePatient"
       aria-label="Download on the Play Store"
       className={clsx('rounded-lg transition-colors')}
+      target="_blank"
     >
       <Image
         style={{ width: 145 }}

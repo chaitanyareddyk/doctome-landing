@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Popover } from '@headlessui/react'
 import { AnimatePresence, motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
@@ -47,6 +48,21 @@ function MobileNavLink({ children, ...props }) {
 }
 
 export function Header() {
+  const [storeLink, setStoreLink] = useState('#')
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent || navigator.vendor
+    if (/android/i.test(userAgent)) {
+      setStoreLink(
+        'https://play.google.com/store/apps/details?id=com.doctome.doctomePatient'
+      )
+    } else if (/iPad|iPhone|iPod/.test(userAgent)) {
+      setStoreLink(
+        'https://apps.apple.com/in/app/doctome-doctor-at-doorstep/id6456892185'
+      )
+    }
+  }, [])
+
   return (
     <header>
       <nav>
@@ -119,7 +135,7 @@ export function Header() {
                             {/* <Button href="/login" variant="outline">
                               Log in
                             </Button> */}
-                            <Button href="#">Download the app</Button>
+                            <Button href={storeLink}>Download the app</Button>
                           </div>
                         </Popover.Panel>
                       </>

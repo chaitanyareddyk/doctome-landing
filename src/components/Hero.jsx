@@ -1,4 +1,4 @@
-import { useId, useRef, useState } from 'react'
+import { useId, useRef, useState, useEffect } from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'
 import { motion, useInView, useMotionValue } from 'framer-motion'
@@ -111,7 +111,7 @@ export function Hero() {
               home medical management for users, while enabling doctors to reach
               more patients.
             </p>
-            <div className="my-8 text-lg font-semibold">Public Launch Soon</div>
+            <div className="my-8 text-lg font-semibold">Beta Release Live</div>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
               <AppStoreLink />
               <PlayStoreLink />
