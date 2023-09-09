@@ -45,7 +45,7 @@ export default function Document() {
             <img
               height="1"
               width="1"
-              style="display:none"
+              style={{ display: 'none' }}
               src="https://www.facebook.com/tr?id=211456815259725&ev=PageView&noscript=1"
             />
           </noscript>
