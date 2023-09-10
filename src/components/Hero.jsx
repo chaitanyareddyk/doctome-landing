@@ -111,7 +111,7 @@ export function Hero() {
               home medical management for users, while enabling doctors to reach
               more patients.
             </p>
-            <div className="my-8 text-lg font-semibold">Beta Release Live</div>
+            {/* <div className="my-8 text-lg font-semibold">Beta Release Live</div> */}
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
               <AppStoreLink />
               <PlayStoreLink />
