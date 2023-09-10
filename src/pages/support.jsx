@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { AuthLayout } from '@/components/AuthLayout'
 import { Button } from '@/components/Button'
 import { TextField } from '@/components/Fields'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 export default function Support() {
   return (
@@ -11,7 +13,8 @@ export default function Support() {
       <Head>
         <title>Doctome - Support</title>
       </Head>
-      <div className="mx-36 my-12 flex flex-col">
+      <Header/>
+      <div className="md:mx-36 mx-8 my-12 flex flex-col">
         <div className="bg-white py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
@@ -169,6 +172,7 @@ export default function Support() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   )
 }
