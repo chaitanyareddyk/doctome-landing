@@ -8,7 +8,9 @@ export function PlayStoreLink({ color = 'black' }) {
     <Link
       href="https://play.google.com/store/apps/details?id=com.doctome.doctomePatient"
       aria-label="Download on the Play Store"
-      className={clsx('rounded-lg transition-colors')}
+      className={clsx(
+        'flex flex-row justify-center rounded-lg transition-colors'
+      )}
       target="_blank"
     >
       <Image
