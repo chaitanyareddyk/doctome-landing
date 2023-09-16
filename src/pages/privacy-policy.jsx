@@ -129,7 +129,8 @@ export default function Privacy() {
       <Head>
         <title>Doctome - Privacy Policy</title>
       </Head>
-      <div className="md:mx-32 mx-8 my-12 flex flex-col">
+      <div className="md:mx-8  mx-4 my-12 flex flex-col">
+
         <div dangerouslySetInnerHTML={{ __html: htmlString }} />
       </div>
   <Footer/>

@@ -14,7 +14,7 @@ export default function Support() {
         <title>Doctome - Support</title>
       </Head>
       <Header/>
-      <div className="md:mx-36 mx-8 my-12 flex flex-col">
+      <div className="md:mx-8  mx-4 my-12 flex flex-col">
         <div className="bg-white py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
@@ -122,7 +122,7 @@ export default function Support() {
               <div className="grid grid-cols-1 gap-x-8 gap-y-10 pt-16 lg:grid-cols-3">
                 <div>
                   <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-                    Locations
+                    Location
                   </h2>
                   {/* <p className="mt-4 leading-7 text-gray-600">
                     Consequat sunt cillum cillum elit sint. Qui occaecat nisi in
