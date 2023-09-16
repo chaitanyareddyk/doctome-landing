@@ -72,7 +72,8 @@ export function Header() {
               {/* <Logo className="h-10 w-auto" /> */}
               {/* DOCTOME */}
               <Image
-                src="/doctome-logo-s-violet.png"
+                src="/doctome-logo-2.png"
+
                 width={100}
                 height={100}
                 alt="Doctome Logo"
