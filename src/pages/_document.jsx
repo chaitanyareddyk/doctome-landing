@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html className="h-full bg-gray-50 antialiased" lang="en">
       <Head>
-        <link rel="shortcut icon" href="/doctome-logo-2.png" />
+        <link rel="shortcut icon" href="/doctome-favicon.png" />
         {/* Global Site Tag (gtag.js) - Google Analytics */}
 
         <>

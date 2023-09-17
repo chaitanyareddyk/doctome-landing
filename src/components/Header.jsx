@@ -127,6 +127,9 @@ export function Header() {
                             <MobileNavLink href="#reviews">
                               Reviews
                             </MobileNavLink>
+                            <MobileNavLink href="tel:+91 9100572486">
+                              Contact us : +91 910057248
+                            </MobileNavLink>
                             {/* <MobileNavLink href="#pricing">
                               Pricing
                             </MobileNavLink> */}
