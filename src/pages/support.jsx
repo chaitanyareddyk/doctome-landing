@@ -47,7 +47,7 @@ export default function Support() {
                       </div>
                       <div className="mt-1">
                         <dt className="sr-only">Phone number</dt>
-                        <dd>+91 70931 93410</dd>
+                        <dd>+91 9100572486</dd>
                       </div>
                     </dl>
                   </div>
