@@ -73,12 +73,12 @@ export function Header() {
               {/* DOCTOME */}
               <Image
                 src="/doctome-logo-2.png"
-
                 width={100}
                 height={100}
                 alt="Doctome Logo"
               />
             </Link>
+
             <div className="hidden lg:flex lg:gap-10">{/* <NavLinks /> */}</div>
           </div>
           <div className="flex items-center gap-6">
@@ -128,7 +128,7 @@ export function Header() {
                               Reviews
                             </MobileNavLink>
                             <MobileNavLink href="tel:+91 9100572486">
-                              Contact us : +91 910057248
+                              Call us : +91 9100572486
                             </MobileNavLink>
                             {/* <MobileNavLink href="#pricing">
                               Pricing
