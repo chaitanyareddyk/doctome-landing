@@ -8,7 +8,7 @@ import {Header} from '@/components/Header'
 import { Footer } from '@/components/Footer'
 
 
-const htmlString = ` <h1 class='text-[#000000] font-extrabold'>Privacy Policy</h1>
+const htmlString = ` <h1 class='text-[#000000] font-extrabold'>Terms & Services</h1>
 <p>Updated at 2023-09-10</p>
 <p> These Terms and Conditions ("Terms") govern your use of the DOCTOME mobile application (the "App"). This Terms of Use Agreement ("Agreement") is a legally binding contract between you ("User" or "you") and DOCTOME, its affiliates, and subsidiaries ("DOCTOME," “DOCTOME”, “we," "us," or "our"). By using the DOCTOME mobile application ("App") and its services, you agree to be bound by the terms and conditions of this Agreement. If you do not agree with these terms, do not use the App or its services.</p><br/> 
 
@@ -214,7 +214,7 @@ export default function Terms() {
       <Head>
         <title>Doctome - Terms of Service</title>
       </Head>
-      <div className="md:mx-36 mx-8 my-12 flex flex-col">
+      <div className="md:mx-8 mx-4 my-12 flex flex-col">
         <div dangerouslySetInnerHTML={{ __html: htmlString }} />
       </div>
   <Footer/>

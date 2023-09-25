@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { AuthLayout } from '@/components/AuthLayout'
 import { Button } from '@/components/Button'
 import { TextField } from '@/components/Fields'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 export default function Support() {
   return (
@@ -11,7 +13,8 @@ export default function Support() {
       <Head>
         <title>Doctome - Support</title>
       </Head>
-      <div className="mx-36 my-12 flex flex-col">
+      <Header/>
+      <div className="md:mx-8  mx-4 my-12 flex flex-col">
         <div className="bg-white py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
@@ -44,7 +47,7 @@ export default function Support() {
                       </div>
                       <div className="mt-1">
                         <dt className="sr-only">Phone number</dt>
-                        <dd>+91 70931 93410</dd>
+                        <dd>+91 9100572486</dd>
                       </div>
                     </dl>
                   </div>
@@ -119,7 +122,7 @@ export default function Support() {
               <div className="grid grid-cols-1 gap-x-8 gap-y-10 pt-16 lg:grid-cols-3">
                 <div>
                   <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-                    Locations
+                    Location
                   </h2>
                   {/* <p className="mt-4 leading-7 text-gray-600">
                     Consequat sunt cillum cillum elit sint. Qui occaecat nisi in
@@ -169,6 +172,7 @@ export default function Support() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   )
 }

@@ -9,6 +9,8 @@ import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { Reviews } from '@/components/Reviews'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
           name="description"
           content="A mobile app, providing at-home doctor consultations with complete home medical management for users, while enabling doctors to reach more patients."
         />
+        {/* <link rel="shortcut icon" href="/doctome-favicon.png" /> */}
+
       </Head>
       <Header />
       <main>

@@ -72,7 +72,8 @@ export function Header() {
               {/* <Logo className="h-10 w-auto" /> */}
               {/* DOCTOME */}
               <Image
-                src="/doctome-logo-s-violet.png"
+                src="/doctome-logo-2.png"
+
                 width={100}
                 height={100}
                 alt="Doctome Logo"
@@ -125,6 +126,9 @@ export function Header() {
                             </MobileNavLink>
                             <MobileNavLink href="#reviews">
                               Reviews
+                            </MobileNavLink>
+                            <MobileNavLink href="tel:+91 9100572486">
+                              Contact us : +91 910057248
                             </MobileNavLink>
                             {/* <MobileNavLink href="#pricing">
                               Pricing

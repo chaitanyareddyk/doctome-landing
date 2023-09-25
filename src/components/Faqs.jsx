@@ -77,7 +77,7 @@ export function Faqs() {
             If you have anything else you want to ask,{' '}
             <Link
               href="mailto:support@doctome.in"
-              className="text-gray-900 underline"
+              className="text-[#2e125d] font-semibold underline"
             >
               reach out to us
             </Link>
