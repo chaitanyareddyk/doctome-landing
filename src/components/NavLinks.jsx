@@ -10,10 +10,6 @@ export function NavLinks() {
     ['Support', '/support'],
     ['Privacy', '/privacy-policy'],
     ['Refunds', '/terms-of-service'],
-    ['Contact Us : +91 9100572486' , 'href:tel:+91 9100572486']
-    
-                              
-                            
   ].map(([label, href], index) => (
     <Link
       key={label}
@@ -37,8 +33,6 @@ export function NavLinks() {
         )}
       </AnimatePresence>
       <span className="relative z-10">{label}</span>
-     
     </Link>
-    
   ))
 }
